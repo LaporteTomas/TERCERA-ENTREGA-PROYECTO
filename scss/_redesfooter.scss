@@ -1,0 +1,51 @@
+.redes-footer a:active,.redes-footer a:focus,.redes-footer a:hover
+{
+  color:#fff;
+  background-color:#3b3737
+}
+.redes-footer{    
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
+    .li{
+        display: inline-block;
+        margin-bottom: 4px;
+        .a{
+            background-color:#eceeef;
+            color:#818a91;
+            font-size:16px;
+            display:inline-block;
+            line-height:44px;
+            width:44px;
+            height:44px;
+            text-align:center;
+            margin-right:8px;
+            border-radius:100%;
+            
+        }
+
+    }
+}
+
+
+$bgfacebook: #3b5998;
+$bgtwitter: #00aced;
+$bgyoutube: #ca0c0c;
+$bginstagram: #ea4c89;
+
+@mixin bgicon ($bg){
+    background-color: $bg;
+}
+.redes-footer a.facebook:hover{
+    @include bgicon($bgfacebook)
+}
+.redes-footer a.twitter:hover{
+    @include bgicon($bgtwitter)
+}
+.redes-footer a.youtube:hover{
+    @include bgicon($bgyoutube)
+}
+.redes-footer a.instagram:hover{
+    @include bgicon($bginstagram)
+}
+
